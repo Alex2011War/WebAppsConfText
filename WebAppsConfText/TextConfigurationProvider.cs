@@ -19,9 +19,9 @@ namespace WebAppsConfText
         public override void Load()
         {
             var data=new Dictionary<string,string>(StringComparer.OrdinalIgnoreCase);
-            using (FileStream fs=new FileStream(FilePath,FileMode.Open))
+            using (FileStream fs=new FileStream(FilePath,FileMode.Open))//добавть в бинарный поток
             {
-                using (StreamReader textReader=new StreamReader(fs))
+                using (StreamReader textReader=new StreamReader(fs))//чтение  и звлечение из потока
                 {
                     string line;
                   
