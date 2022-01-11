@@ -1,4 +1,4 @@
 ﻿color
 red
 text
-Hello ASP.NET Core
+Здесь может быть твоя конфигурация

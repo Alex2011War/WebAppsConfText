@@ -33,7 +33,10 @@ namespace WebAppsConfText
             
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync($"{AppConfiguration["color"]}:{AppConfiguration["text"]}");
+                var color = AppConfiguration["color"];
+                var text = AppConfiguration["text"];
+                context.Response.ContentType = "text/html; charset=utf-8";
+                await context.Response.WriteAsync($"<p style= 'color:{color};'>{text}</p>");
             });
         }
     }
