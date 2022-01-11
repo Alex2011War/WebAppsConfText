@@ -25,7 +25,7 @@ namespace WebAppsConfText
                 {
                     string line;
                   
-                    while ((line= textReader.ReadLine())!=null)
+                    while ((line=textReader.ReadLine())!=null)
                     {
                         var key = line.Trim();
                         var value = textReader.ReadLine();
